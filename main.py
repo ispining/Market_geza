@@ -482,7 +482,7 @@ def calls(call):
         keyboard.row(d1)
         keyboard.row(back)
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
-                              text=config.my.squality, reply_markup=keyboard
+                              text=config.my.squality, reply_markup=keyboard)
 
     elif call.data == "c6":
         config.result3 = config.my.cost_1000
@@ -500,7 +500,7 @@ def calls(call):
         keyboard.row(d1)
         keyboard.row(back)
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
-                              text=config.my.squality, reply_markup=keyboard
+                              text=config.my.squality, reply_markup=keyboard)
 
     elif call.data == "d1":
         keyboard = types.InlineKeyboardMarkup()
