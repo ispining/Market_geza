@@ -468,25 +468,41 @@ def calls(call):
 
     elif call.data == "c5":
         config.result3 = config.my.cost_90
-        config.result_text = "empty"
         keyboard = types.InlineKeyboardMarkup()
+        d1 = types.InlineKeyboardButton(config.one_star, callback_data="d1")
+        d2 = types.InlineKeyboardButton(config.two_stars, callback_data="d2")
+        d3 = types.InlineKeyboardButton(config.three_stars, callback_data="d3")
+        d4 = types.InlineKeyboardButton(config.four_stars, callback_data="d4")
+        d5 = types.InlineKeyboardButton(config.five_stars, callback_data="d5")
         back = types.InlineKeyboardButton(config.my.back, callback_data='home')
+        keyboard.row(d5)
+        keyboard.row(d4)
+        keyboard.row(d3)
+        keyboard.row(d2)
+        keyboard.row(d1)
         keyboard.row(back)
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
-                              text=config.my.squality, reply_markup=keyboard)
+                              text=config.my.squality, reply_markup=keyboard
 
     elif call.data == "c6":
-        config.result3 = config.my.cost_100
-        config.result_text = "empty"
+        config.result3 = config.my.cost_1000
         keyboard = types.InlineKeyboardMarkup()
+        d1 = types.InlineKeyboardButton(config.one_star, callback_data="d1")
+        d2 = types.InlineKeyboardButton(config.two_stars, callback_data="d2")
+        d3 = types.InlineKeyboardButton(config.three_stars, callback_data="d3")
+        d4 = types.InlineKeyboardButton(config.four_stars, callback_data="d4")
+        d5 = types.InlineKeyboardButton(config.five_stars, callback_data="d5")
         back = types.InlineKeyboardButton(config.my.back, callback_data='home')
+        keyboard.row(d5)
+        keyboard.row(d4)
+        keyboard.row(d3)
+        keyboard.row(d2)
+        keyboard.row(d1)
         keyboard.row(back)
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
-                              text=config.my.squality, reply_markup=keyboard)
+                              text=config.my.squality, reply_markup=keyboard
 
     elif call.data == "d1":
-        config.result3 = config.my.cost_100
-        config.result_text = "empty"
         keyboard = types.InlineKeyboardMarkup()
         back = types.InlineKeyboardButton(config.my.back, callback_data='home')
         keyboard.row(back)
@@ -494,8 +510,6 @@ def calls(call):
                               text=config.my.about_result)
 
     elif call.data == "d2":
-        config.result3 = config.my.cost_90
-        config.result_text = "empty"
         keyboard = types.InlineKeyboardMarkup()
         back = types.InlineKeyboardButton(config.my.back, callback_data='home')
         keyboard.row(back)
@@ -503,8 +517,6 @@ def calls(call):
                               text=config.my.about_result)
 
     elif call.data == "d3":
-        config.result3 = config.my.cost_80
-        config.result_text = "empty"
         keyboard = types.InlineKeyboardMarkup()
         back = types.InlineKeyboardButton(config.my.back, callback_data='home')
         keyboard.row(back)
@@ -512,8 +524,6 @@ def calls(call):
                               text=config.my.about_result)
 
     elif call.data == "d4":
-        config.result3 = config.my.cost_70
-        config.result_text = "empty"
         keyboard = types.InlineKeyboardMarkup()
         back = types.InlineKeyboardButton(config.my.back, callback_data='home')
         keyboard.row(back)
@@ -521,16 +531,12 @@ def calls(call):
                               text=config.my.about_result)
 
     elif call.data == "d5":
-        config.result3 = config.my.cost_60
-        config.result_text = "empty"
         keyboard = types.InlineKeyboardMarkup()
         back = types.InlineKeyboardButton(config.my.back, callback_data='home')
         keyboard.row(back)
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                               text=config.my.about_result)
     elif call.data == "d6":
-        config.result3 = config.my.cost_50
-        config.result_text = "empty"
         keyboard = types.InlineKeyboardMarkup()
         back = types.InlineKeyboardButton(config.my.back, callback_data='home')
         keyboard.row(back)
