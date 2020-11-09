@@ -47,3 +47,5 @@ harle_text = 'Harlequin, with an indica Sativa ratio of 75 to 25 and a CBD to TH
 sour_zunami_text = 'Although the name is suitable for a cocktail, the plant can also give you a cool head. \n With a CBD to THC ratio of almost one to one in the ten percent range, the effect of THC will be most noticeable, but moderate due to the CBD, which will give a relatively strong "high" feeling but one that will allow full control even for the novice consumer.'
 peni_text = 'Pennywise, the strain that received an overall score of 4.3 in the Leafly strain catalog, is considered the perfect treatment for anxiety and stress, yet is only suitable for those who want to experience a very strong "high" feeling. \nThe spicy-tasting variety is considered one of the strongest varieties in the beginner category, and will probably give you a couch collapse and thoughts on what if...'
 tunnel_text = "להשאיר ביקורת חדשה"
+me_button = "לפנות אל מרקט 420"
+me_button_url = "https://t.me/market_420admin"
