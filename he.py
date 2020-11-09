@@ -1,5 +1,5 @@
 welcome_message = "\n🔒מאובטח🔒" + "\n🤗 ברוכים הבאים לבוט של 420! 🤗\n" + "\nהצוות הוותיק בטלגרם עושה עוד טיפה טרור!! \n" + "\n✅ כל בעיה באחריותינו ותפתר ע\"י צוות 420" + "\n✅ האזור הבטוח ביותר ברחבי הטלגרם!!!\n"
-group_button = "👥לקבוצה של מרקט 420👥"
+group_button = "👥קבוצה מידע וביקורות 420👥"
 group_button_url = "https://t.me/market_420c"
 weed_info_button = '🍀מידע על זנים שהיו אצלינו🍀'
 weed_info_button_call = 'weed_info'
