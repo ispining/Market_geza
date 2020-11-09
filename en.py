@@ -1,5 +1,5 @@
 welcome_message = "\n🔒 Secure🔒 "+" \n🤗 Welcome to the 420 bot! 🤗 \n "+"\n The veteran team at Telegram is doing another drop of terror !! \n "+" \n✅ Any problem is our responsibility and will be resolved by the 420 "+" \n✅ team in the safest area throughout the telegram !!! \n"
-group_button = "👥For a group of Market 420👥"
+group_button = "👥Our group with reviews👥"
 group_button_url = "https://t.me/market_420c"
 weed_info_button = '🍀Information about varieties🍀'
 weed_info_button_call = 'weed_info'
