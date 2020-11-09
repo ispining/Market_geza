@@ -30,6 +30,8 @@ bot = telebot.TeleBot(config.token, parse_mode=None)
 def welcome(message):
         if message.chat.type == "private":
             keyboard = types.InlineKeyboardMarkup()
+            me_button = types.InlineKeyboardButton(config.my.me_button, url=config.my.me_button_url)
+            keyboard.row(me_button)
             group_button = types.InlineKeyboardButton(config.my.group_button, url=config.my.group_button_url)
             keyboard.row(group_button)
             weed_info_button = types.InlineKeyboardButton(config.my.weed_info_button,
@@ -52,6 +54,8 @@ def calls(call):
     if call.data == "en":
         config.my = en
         keyboard = types.InlineKeyboardMarkup()
+        me_button = types.InlineKeyboardButton(config.my.me_button, url=config.my.me_button_url)
+        keyboard.row(me_button)
         group_button = types.InlineKeyboardButton(config.my.group_button, url=config.my.group_button_url)
         keyboard.row(group_button)
         weed_info_button = types.InlineKeyboardButton(config.my.weed_info_button, callback_data=config.my.weed_info_button_call)
@@ -69,6 +73,8 @@ def calls(call):
     elif call.data == "ru":
         config.my = ru
         keyboard = types.InlineKeyboardMarkup()
+        me_button = types.InlineKeyboardButton(config.my.me_button, url=config.my.me_button_url)
+        keyboard.row(me_button)
         group_button = types.InlineKeyboardButton(config.my.group_button, url=config.my.group_button_url)
         keyboard.row(group_button)
         weed_info_button = types.InlineKeyboardButton(config.my.weed_info_button,
@@ -88,6 +94,8 @@ def calls(call):
     elif call.data == "he":
         config.my = he
         keyboard = types.InlineKeyboardMarkup()
+        me_button = types.InlineKeyboardButton(config.my.me_button, url=config.my.me_button_url)
+        keyboard.row(me_button)
         group_button = types.InlineKeyboardButton(config.my.group_button, url=config.my.group_button_url)
         keyboard.row(group_button)
         weed_info_button = types.InlineKeyboardButton(config.my.weed_info_button,
@@ -106,6 +114,8 @@ def calls(call):
 
     elif call.data == "home":
         keyboard = types.InlineKeyboardMarkup()
+        me_button = types.InlineKeyboardButton(config.my.me_button, url=config.my.me_button_url)
+        keyboard.row(me_button)
         group_button = types.InlineKeyboardButton(config.my.group_button, url=config.my.group_button_url)
         keyboard.row(group_button)
         weed_info_button = types.InlineKeyboardButton(config.my.weed_info_button,
