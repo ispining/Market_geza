@@ -551,7 +551,7 @@ def about_dealer(message):
     if config.result_text == "empty":
         config.result_text = message.text
         keyboard = types.InlineKeyboardMarkup()
-        back = types.InlineKeyboardButton(config.my.tunnel_text, callback_data="home")
+        back = types.InlineKeyboardButton("בוט הגזע של מרקט 420", url="https://t.me/market_gezabot")
         keyboard.row(back)
         config.r_text = "הלקוח:   "+ message.chat.username +he.delivery_result + config.result1 + "\n" + he.quality_result + config.result2 + \
                         "\n"+ he.cost_result + config.result3 + he.about_result + config.result_text
